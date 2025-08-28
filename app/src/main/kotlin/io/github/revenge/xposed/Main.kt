@@ -1,4 +1,4 @@
-package io.github.revenge.xposed
+package io.github.vencore.xposed
 
 import android.app.Activity
 import android.content.res.AssetManager
