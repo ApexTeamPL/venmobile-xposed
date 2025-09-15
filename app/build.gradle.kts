@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "io.github.revenge.xposed"
+    namespace = "io.apexteam.vencorexposed"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "io.github.revenge.xposed"
+        applicationId = "io.apexteam.vencorexposed"
         minSdk = 24
         targetSdk = 35
         versionCode = 1202

@@ -1,4 +1,4 @@
-package io.github.revenge.xposed.modules
+package io.apexteam.vencorexposed.modules
 
 import android.app.AlertDialog
 import android.app.AndroidAppHelper
@@ -8,9 +8,9 @@ import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
 import de.robv.android.xposed.callbacks.XC_LoadPackage
-import io.github.revenge.xposed.Constants
-import io.github.revenge.xposed.Module
-import io.github.revenge.xposed.Utils
+import io.apexteam.vencorexposed.Constants
+import io.apexteam.vencorexposed.Module
+import io.apexteam.vencorexposed.Utils
 import java.io.File
 import kotlin.system.exitProcess
 
@@ -84,7 +84,7 @@ class LogBoxModule: Module() {
 
     private fun showRecoveryAlert(context: Context, onClose: () -> Unit): AlertDialog {
         return AlertDialog.Builder(context)
-            .setTitle("Revenge Recovery Options")
+            .setTitle("Vencore Recovery Options")
             .setItems(arrayOf("Reload", "Delete bundle.js")) { _, which ->
                 when (which) {
                     0 -> {

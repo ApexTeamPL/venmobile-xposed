@@ -1,4 +1,4 @@
-package io.github.revenge.xposed
+package io.apexteam.vencorexposed
 
 import kotlinx.serialization.json.Json
 

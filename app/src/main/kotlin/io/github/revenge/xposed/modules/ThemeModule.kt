@@ -1,4 +1,4 @@
-package io.github.revenge.xposed.modules
+package io.apexteam.vencorexposed.modules
 
 import android.content.Context
 import android.content.res.Resources
@@ -10,9 +10,9 @@ import kotlinx.serialization.Serializable
 import java.io.File
 import kotlinx.serialization.json.*
 import androidx.core.graphics.toColorInt
-import io.github.revenge.xposed.Constants
-import io.github.revenge.xposed.Module
-import io.github.revenge.xposed.Utils.Companion.JSON
+import io.apexteam.vencorexposed.Constants
+import io.apexteam.vencorexposed.Module
+import io.apexteam.vencorexposed.Utils.Companion.JSON
 
 @Serializable
 data class Author(

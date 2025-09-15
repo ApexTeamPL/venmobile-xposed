@@ -1,7 +1,7 @@
-package io.github.revenge.xposed.modules
+package io.apexteam.vencorexposed.modules
 
 import de.robv.android.xposed.callbacks.XC_LoadPackage
-import io.github.revenge.xposed.Module
+import io.apexteam.vencorexposed.Module
 import java.lang.reflect.Method
 
 /**

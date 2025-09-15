@@ -1,4 +1,4 @@
-package io.github.revenge.xposed
+package io.apexteam.vencorexposed
 
 import android.app.Activity
 import de.robv.android.xposed.XC_MethodHook

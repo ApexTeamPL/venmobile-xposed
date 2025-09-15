@@ -1,11 +1,11 @@
-package io.github.revenge.xposed.modules
+package io.apexteam.vencorexposed.modules
 
 import android.R.color
 import android.app.AndroidAppHelper
 import android.content.Context
 import android.os.Build
 import androidx.core.content.ContextCompat
-import io.github.revenge.xposed.Module
+import io.apexteam.vencorexposed.Module
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.*
 

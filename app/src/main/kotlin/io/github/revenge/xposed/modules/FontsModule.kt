@@ -1,4 +1,4 @@
-package io.github.revenge.xposed.modules
+package io.apexteam.vencorexposed.modules
 
 import android.content.res.AssetManager
 import android.os.Build
@@ -9,10 +9,10 @@ import android.graphics.fonts.FontFamily
 import de.robv.android.xposed.XC_MethodReplacement
 import de.robv.android.xposed.XposedHelpers
 import de.robv.android.xposed.callbacks.XC_LoadPackage
-import io.github.revenge.xposed.Constants
-import io.github.revenge.xposed.Module
-import io.github.revenge.xposed.Utils.Log
-import io.github.revenge.xposed.Utils.Companion.JSON
+import io.apexteam.vencorexposed.Constants
+import io.apexteam.vencorexposed.Module
+import io.apexteam.vencorexposed.Utils.Log
+import io.apexteam.vencorexposed.Utils.Companion.JSON
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.*
 import java.io.IOException

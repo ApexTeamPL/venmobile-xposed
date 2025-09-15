@@ -1,5 +1,4 @@
-package io.github.vencore.xposed
-
+package io.apexteam.vencorexposed
 import android.app.Activity
 import android.content.res.AssetManager
 import android.content.res.Resources
@@ -9,13 +8,13 @@ import de.robv.android.xposed.IXposedHookLoadPackage
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.callbacks.XC_LoadPackage
-import io.github.revenge.xposed.modules.FontsModule
-import io.github.revenge.xposed.modules.LogBoxModule
-import io.github.revenge.xposed.modules.NativeBridgeModule
-import io.github.revenge.xposed.modules.SysColorsModule
-import io.github.revenge.xposed.modules.ThemeModule
-import io.github.revenge.xposed.Utils.Companion.JSON
-import io.github.revenge.xposed.Utils.Log
+import io.apexteam.vencorexposed.modules.FontsModule
+import io.apexteam.vencorexposed.modules.LogBoxModule
+import io.apexteam.vencorexposed.modules.NativeBridgeModule
+import io.apexteam.vencorexposed.modules.SysColorsModule
+import io.apexteam.vencorexposed.modules.ThemeModule
+import io.apexteam.vencorexposed.Utils.Companion.JSON
+import io.apexteam.vencorexposed.Utils.Log
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.engine.cio.*
@@ -54,9 +53,9 @@ class Main : Module(), IXposedHookLoadPackage {
     val ETAG_FILE = "etag.txt"
     val CONFIG_FILE = "loader.json"
 
-    val LOADER_NAME = "RevengeXposed"
+    val LOADER_NAME = "VencoreXposed"
 
-    val DEFAULT_BUNDLE_URL = "https://github.com/revenge-mod/revenge-bundle/releases/latest/download/revenge.min.js"
+    val DEFAULT_BUNDLE_URL = "https://github.com/ApexTeamPL/venmobile-bundle/releases/download/latest-dev/vencore.js"
 
     val TARGET_PACKAGE = "com.discord"
     val TARGET_ACTIVITY = "$TARGET_PACKAGE.react_activities.ReactActivity"
@@ -149,7 +148,7 @@ class Main : Module(), IXposedHookLoadPackage {
                         activity.runOnUiThread {
                             Toast.makeText(
                                 activity.applicationContext,
-                                "Failed to fetch JS bundle, Revenge may not load!",
+                                "Failed to fetch JS bundle, Vencore may not load!",
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
